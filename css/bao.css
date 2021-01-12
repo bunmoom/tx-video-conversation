@@ -1,0 +1,6 @@
+.col-div {
+  /* display: none; */
+}
+html, body, .root, .room-root {
+  height: 100%;
+}
