@@ -328,7 +328,7 @@
         <!-- 聊天室页面 -->
         <div id="room-root" class="col-div">
             <!-- header -->
-            <div class="row-div card" style="width: 100%; height: 65px; justify-content: space-between">
+            <div class="row-div card" style="width: 100%; height: 65px; justify-content: space-between;display:none">
                 <!-- 腾讯云logo -->
                 <div class="row-div" style="height: 100%; width: 230px; justify-content: center">
                     <img style="height: 23px" src="./img/logo.png" alt="">
@@ -349,8 +349,8 @@
                     房间号: 12345</div>
             </div>
             <!-- content -->
-            <div class="row-div" style="height: 100%; width: 100%; padding: 10px">
-                <div class="col-div" style="width: 340px; height: 100%; padding: 10px; display: none">
+            <div class="row-div" style="height: 100%; width: 100%; padding: 0px">
+                <div class="col-div" style="width: 340px; height: 100%; padding: 0px; display: none">
                     <div class="col-div card" style="width: 100%; height: 100%">
                         <!-- 成员列表 -->
                         <div id="member-list" class="col-div" style="width: 100%; justify-content: flex-start; flex: 1">
@@ -392,11 +392,15 @@
                     <div id="main-video" class="video-box col-div" style="justify-content: flex-end; outline:1px solid red">
                         <!-- 主视频控制按钮 -->
                         <div id="main-video-btns" class="row-div"
-                            style="width: 156px; position: absolute; z-index: 10; justify-content: center; align-self: flex-end">
+                            style="width: 272px; position: absolute; z-index: 10; justify-content: center; align-self: flex-end">
                             <img id="video-btn" style="width: 68px; height: 68px" onClick="event.cancelBubble = true"
                                 src="./img/big-camera-on.png" alt="">
                             <img id="mic-btn" style="width: 68px; height: 68px" onClick="event.cancelBubble = true"
                                 src="./img/big-mic-on.png" alt="">
+                            <img id="video-btn" style="width: 68px; height: 68px" onClick="event.cancelBubble = true"
+                                src="./img/screen-off.png" alt="">
+                            <img id="video-btn" style="width: 68px; height: 68px" onClick="event.cancelBubble = true"
+                                src="./img/logout.png" alt="">
                         </div>
                         <div id="mask_main" class="mask col-div">
                             <!-- “摄像头未开启”遮罩 -->

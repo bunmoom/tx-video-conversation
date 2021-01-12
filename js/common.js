@@ -249,7 +249,7 @@ function addVideoView(id, isLocal = false) {
   let div = $('<div/>', {
     id: id,
     class: 'video-box',
-    style: 'justify-content: center'
+    style: 'justify-content: center;position: absolute;top: 20px;right: 20px;width: 40%;height: 30%;border: 1px solid red;'
   });
   div.appendTo('#video-grid');
   //设置监听
