@@ -3,8 +3,10 @@
 class Presetting {
   init() {
     // populate userId/roomId
-    $('#userId').val('user_' + parseInt(Math.random() * 100000000));
-    $('#roomId').val(parseInt(Math.random() * 100000));
+    // $('#userId').val('user_' + parseInt(Math.random() * 100000000));
+    // $('#roomId').val(parseInt(Math.random() * 100000));
+    $('#userId').val(this.query('user_id'));
+    $('#roomId').val(this.query('room_id'));
     const roomId = this.query('roomId');
     const userId = this.query('userId');
     if (roomId) {
